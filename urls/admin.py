@@ -8,5 +8,5 @@ admin.site.register(Collection)
 
 @admin.register(Url)
 class UrlAdmin(admin.ModelAdmin):
-    list_display = ('title', 'description', 'type', 'created_at', 'updated_at')
+    list_display = ('title', 'url', 'user', 'created_at', 'updated_at')
 

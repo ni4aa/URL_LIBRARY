@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'djoser',
 
     "urls.apps.UrlsConfig",
-    "users.apps.UsersConfig"
+    "users.apps.UsersConfig",
 ]
 
 MIDDLEWARE = [
@@ -156,6 +156,7 @@ else:
 
 #DRF
 REST_FRAMEWORK = {
+
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.BasicAuthentication',

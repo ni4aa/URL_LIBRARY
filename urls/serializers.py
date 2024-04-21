@@ -32,5 +32,5 @@ class UrlSerializer(serializers.ModelSerializer):
                 if not validated_data[key[3:]]:
                     validated_data[key[3:]] = value
         finally:
-            return Url.objects.create(**validated_data)
+            return super(UrlSerializer, self).create(validated_data)
 
